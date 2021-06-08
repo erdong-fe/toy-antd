@@ -1,5 +1,9 @@
-import React from 'react';
+import { createContext, Context } from 'react';
 
-const RowContext = React.createContext({});
+export interface RowContextState {
+    gutter?: number
+}
+
+const RowContext: Context<RowContextState> = createContext({});
 
 export default RowContext;
