@@ -3,12 +3,12 @@ import RowContext from './RowContext';
 import './style.scss';
 
 interface RowProps extends React.HTMLAttributes<HTMLDivElement> {
-    gutter: number
+    gutter?: number
 }
 
 function Row(props: RowProps) {
     const {
-        gutter,
+        gutter = 0,
         children
     } = props;
 

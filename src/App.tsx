@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.scss';
-import { Grid } from './components';
+import GridDemo from './demos/grid';
 
 function App() {
   return (
     <div className="App">
-      
+        <GridDemo />
     </div>
   );
 }
